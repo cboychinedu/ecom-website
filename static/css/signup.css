@@ -16,7 +16,7 @@ a {
 }
 
 .footer {
-    border: 2px solid red; 
+    /* border: 2px solid red;  */
     padding: 20px 20px 20px 20px; 
     font-size: 19px; 
 }
@@ -281,6 +281,12 @@ a:hover, a:focus {
         justify-content: center;
         align-items: center;
         background-color: black;} 
+
+    .footer {
+        padding: 17px 0px 20px 0px;
+        margin: 10px 0px 0px -15px;
+        font-size: 18px;
+    }
 
 
 
