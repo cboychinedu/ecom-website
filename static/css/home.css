@@ -141,6 +141,7 @@ a:hover, a:focus {
         align-items: center;
         background-color: black;
         padding-top: 50px;
+        margin-top: 200px;
         padding-bottom: 50px; } 
 
     .last-privacy-footer {
@@ -152,6 +153,17 @@ a:hover, a:focus {
         justify-content: center;
         align-items: center;
         background-color: black;} 
+
+    
+    .body_div {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding-right: 35px;
+        padding-bottom: 30px;
+        padding-left: 35px;
+        margin-top: 65px;
+    }
 
 
 
