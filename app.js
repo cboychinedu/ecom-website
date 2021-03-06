@@ -34,7 +34,8 @@ process.on('ReferenceError', (ex) =>
 
 // Creating a connection to the mongodb database
 // Specifying the database "ecom_website" URI
-const databaseURI = "mongodb://localhost/ecom_website"; 
+const mongodbAtlasURI = "mongodb+srv://ecom_website:iloveariana!100%@cluster0.1awiy.mongodb.net/ecom_website?retryWrites=true&w=majority"
+// const databaseURI = "mongodb://localhost/ecom_website"; 
 
 // Setting the logging configurations 
 // winston.add(winston.transports.Console, { colorize: true, prettyPrint: true }); 
@@ -44,7 +45,7 @@ winston.add(winston.transports.MongoDB, { db: databaseURI , level: 'error' });
 
 
 // Connecting to the database 
-mongodb.connect(databaseURI)
+mongodb.connect(mongodbAtlasURI)
     .then(() =>
     {
         // On successful connection 
