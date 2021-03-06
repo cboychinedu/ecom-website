@@ -197,7 +197,7 @@ a:hover, a:focus {
 
     #left_body_div {
         float: left;
-        width: 45px;
+        width: 13px;
         margin-left: 0px;
         height: 129px;
         padding-left: 53px;
@@ -222,12 +222,12 @@ a:hover, a:focus {
         align-items: center;
         margin-left: 0px;
         font-size: 12px;
-        width: 264px;
+        width: 149px;
         height: 397px;
         border: 2px solid #9b9b9ba3;
-        padding-left: 1px;
-        padding-right: 0px;
-        padding-top: 0px;
+        padding-left: 15px;
+        padding-right: 18px;
+        padding-top: 5px;
         padding-bottom: 41px;
         border-top-right-radius: 45px;
         border-bottom-right-radius: 45px;
@@ -235,13 +235,13 @@ a:hover, a:focus {
 
     #email, #password {
         margin-top: 6px;
-    height: 33px;
-    font-size: 12px;
-    width: 217px;
-    padding-left: 6px;
-    border-radius: 5px;
-    border-color: #edeaea9e;
-    outline: none; }
+        height: 33px;
+        font-size: 12px;
+        width: 139px;
+        padding-left: 6px;
+        border-radius: 5px;
+        border-color: #edeaea9e;
+        outline: none;}
 
     #form {
         margin-top: 6px;
@@ -313,7 +313,6 @@ a:hover, a:focus {
         padding-bottom: 8px;
         margin-bottom: 12px;
     }
-
 
 
     
