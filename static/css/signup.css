@@ -247,7 +247,11 @@ a:hover, a:focus {
     #email, #password {
         margin-top: 6px;
         height: 38px;
-        width: 163px;
+        width: 163px;     justify-content: center;
+        align-items: center;
+        padding-right: 0px;
+        margin-top: 98px;
+        margin-bottom: 148px;
         padding-left: 6px;
         border-radius: 5px;
         border-color: #edeaea9e;
@@ -299,8 +303,8 @@ a:hover, a:focus {
         justify-content: center;
         align-items: center;
         padding-right: 0px;
-        margin-top: 24px;
-        margin-bottom: 200px;
+        margin-top: 98px;
+        margin-bottom: 148px;
     }
 
     #sign_up_btn {
