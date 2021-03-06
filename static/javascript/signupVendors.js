@@ -65,7 +65,7 @@ function checkData()
                 crossDomain: true, 
             })
             // On successful connection 
-            .done((data) =>
+            .done((data, textStatus, request) =>
             {
                 // Successful connection 
                 console.log(data); 

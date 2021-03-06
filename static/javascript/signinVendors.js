@@ -65,10 +65,14 @@ function checkData()
                 crossDomain: true, 
             })
             // On successful connection 
-            .done((data) =>
+            .done((data, textStatus, request) =>
             {
                 // Successful connection 
-                console.log(data); 
+                alert(data.message); 
+                alert("TextStatus: " + textStatus); 
+                console.log(request.getResponseHeader('x-auth-token')); 
+                // Save the token data as a "sessionStorage" 
+                console.log(request); 
             })
         }
 

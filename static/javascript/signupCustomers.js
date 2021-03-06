@@ -65,10 +65,9 @@ function checkData()
                 crossDomain: true, 
             })
             // On successful connection 
-            .done((data) =>
+            .done((data, textStatus, request) =>
             {
-                let headers = myXMLHttpRequest.getAllResponseHeaders(); 
-                console.log(headers); 
+               
                 // Successful connection 
                 console.log(data); 
 
