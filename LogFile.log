@@ -9,3 +9,5 @@
 {"level":"info","message":"Listening on port localhost:3000","timestamp":"2021-03-06T19:26:16.862Z"}
 {"level":"info","message":"Listening on port localhost:3000","timestamp":"2021-03-06T19:37:30.886Z"}
 {"level":"info","message":"Listening on port localhost:5000","timestamp":"2021-03-06T19:52:06.917Z"}
+{"level":"info","message":"Listening on port 0.0.0.0:5000","timestamp":"2021-03-06T20:12:50.227Z"}
+{"level":"info","message":"Listening on port 0.0.0.0:5000","timestamp":"2021-03-06T20:37:26.154Z"}
