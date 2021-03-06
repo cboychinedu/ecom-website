@@ -79,7 +79,7 @@ app.set('view engine', 'pug');
 app.set('views', './views'); 
 
 // Using the environment variable for assigning the PORT and HOST value 
-const PORT = process.env.PORT || 5000; 
+const PORT = 5000; 
 const HOST = process.env.HOST || 'localhost'; 
 
 // Importing the requried routes 
@@ -106,6 +106,8 @@ app.use('/api/customers', customers);
 // console.log('Mail Server: ' + config.get('mail.host'));  
 // console.log('Mail Password: ' + config.get('mail.password')); 
 // console.log(`Application Environment: ${app.get('env')}`)
+
+console.log(process.env.PORT); 
 
 // listening on port 3000 
 app.listen(PORT, HOST, () => 
