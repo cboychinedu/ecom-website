@@ -79,8 +79,8 @@ app.set('view engine', 'pug');
 app.set('views', './views'); 
 
 // Using the environment variable for assigning the PORT and HOST value 
-const PORT = 5000; 
-const HOST = process.env.HOST || 'localhost'; 
+const PORT = process.env.PORT || 5000; 
+const HOST = process.env.HOST || '0.0.0.0'; 
 
 // Importing the requried routes 
 const home = require('./routes/homeRoute.js'); 
