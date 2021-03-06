@@ -1,0 +1,10 @@
+#### Instructions 
+Build a mini ecommerce applicaion. 
+- The application should have "stocks", "Add stocks", "Remove stocks", "Update stocks" 
+- vendors registers 
+- vendors sign up  { Vendors can add new stocks, update, delete }
+- customers registers 
+- customers sign up 
+- customers make orders for products 
+- customers filter out the product they have in stocks 
+- customer can report fake product 
