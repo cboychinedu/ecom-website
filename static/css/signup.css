@@ -190,7 +190,7 @@ a:hover, a:focus {
 }
 
 
-@media (min-width: 360px) {
+@media (min-width: 320px) and (max-width: 469px) {
     .navigator {
         background-color: black;
         color: white;

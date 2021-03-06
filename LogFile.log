@@ -14,3 +14,5 @@
 {"level":"info","message":"Listening on port 0.0.0.0:5000","timestamp":"2021-03-06T20:46:19.870Z"}
 {"level":"info","message":"Listening on port 0.0.0.0:5000","timestamp":"2021-03-06T20:59:46.027Z"}
 {"level":"info","message":"Listening on port 0.0.0.0:5000","timestamp":"2021-03-06T21:12:14.971Z"}
+{"level":"info","message":"Listening on port 0.0.0.0:5000","timestamp":"2021-03-06T21:58:12.484Z"}
+{"message":"querySrv ESERVFAIL _mongodb._tcp.cluster0.1awiy.mongodb.net","stack":"Error: querySrv ESERVFAIL _mongodb._tcp.cluster0.1awiy.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (dns.js:203:19)","code":"ESERVFAIL","syscall":"querySrv","hostname":"_mongodb._tcp.cluster0.1awiy.mongodb.net","level":"error","timestamp":"2021-03-06T21:58:12.505Z"}
