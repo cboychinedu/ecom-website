@@ -190,6 +190,10 @@ a:hover, a:focus {
 }
 
 
+
+
+
+
 @media (min-width: 320px) and (max-width: 469px) {
     .navigator {
         background-color: black;
@@ -206,15 +210,17 @@ a:hover, a:focus {
 
     #left_body_div {
         float: left;
-        width: 45px;
+        width: 29px;
         margin-left: 0px;
-        height: 323px;
-        padding-left: 53px;
-        padding-top: 67px;
+        height: 85px;
+        padding-left: 52px;
+        padding-top: 59px;
         padding-bottom: 75px;
         background-color: black;
         border-top-left-radius: 95px;
-        border-bottom-left-radius: 45px;}
+        border-bottom-left-radius: 45px;
+    }
+    
 
     .sign_up_img {
         height: 83px;
@@ -228,13 +234,13 @@ a:hover, a:focus {
         justify-content: center;
         align-items: center;
         margin-left: 0px;
-        width: 190px;
-        height: 412px;
-        border: 2px solid #9b9b9ba3;
-        padding-left: 18px;
+        width: 188px;
+        height: 154px;
+        /* border: 2px solid #9b9b9ba3; */
+        padding-left: 0px;
         padding-right: 2px;
         padding-top: 0px;
-        padding-bottom: 152px;
+        padding-bottom: 25px;
         border-top-right-radius: 45px;
         border-bottom-right-radius: 45px; } 
 
@@ -288,15 +294,46 @@ a:hover, a:focus {
         font-size: 18px;
     }
 
+    .body_div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0px;
+        margin-top: 24px;
+        margin-bottom: 200px;
+    }
+
+    #sign_up_btn {
+        margin-top: 11px;
+        height: 44px;
+        font-size: 9px;
+        padding-left: 28px;
+        padding-right: 27px;
+        border-radius: 30px;
+        background: black;
+        color: white;
+        border: none;
+        font-weight: bold;
+        outline: none;
+        transition: background-color 2s ease-in-out;
+    }
+
+    #sign_up_btn:hover, 
+    #sign_up_btn:focus {
+        transition: background-color 1s ease-in-out;
+        background-color: rgb(70, 59, 59);
+    }
+
+
+
 
 
     
     
 }
-@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
-@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
-@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
-@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-@media (min-width:1281px) { /* hi-res laptops and desktops */ }
-
+@media screen and  (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+@media screen and  (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media screen and  (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media screen and  (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media screen and  (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media screen and  (min-width:1281px) { /* hi-res laptops and desktops */ }

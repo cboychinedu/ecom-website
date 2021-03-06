@@ -212,13 +212,14 @@ a:hover, a:focus {
         float: left;
         width: 45px;
         margin-left: 0px;
-        height: 323px;
-        padding-left: 53px;
-        padding-top: 67px;
+        height: 99px;
+        padding-left: 52px;
+        padding-top: 62px;
         padding-bottom: 75px;
         background-color: black;
         border-top-left-radius: 95px;
-        border-bottom-left-radius: 45px;}
+        border-bottom-left-radius: 45px;
+    }
 
     .sign_up_img {
         height: 83px;
@@ -253,8 +254,14 @@ a:hover, a:focus {
     }
 
     #form {
-        margin-top: 6px;
-        padding-left: 3px;
+        margin-top: 4px;
+        padding-left: 23px;
+        padding-top: 30px;
+        padding-right: 27px;
+        border-top-right-radius: 32px;
+        border-bottom-right-radius: 32px;
+        padding-bottom: 44px;
+        border: 2px solid #c6c6c6;
     }
 
     a  {
@@ -290,6 +297,30 @@ a:hover, a:focus {
         padding: 17px 0px 20px 0px;
         margin: 10px 0px 0px -15px;
         font-size: 18px;
+    }
+
+    .body_div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0px;
+        margin-top: 24px;
+        margin-bottom: 200px;
+    }
+
+    #sign_up_btn {
+        margin-top: 11px;
+        height: 44px;
+        font-size: 10px;
+        padding-left: 28px;
+        padding-right: 27px;
+        border-radius: 30px;
+        background: black;
+        color: white;
+        border: none;
+        font-weight: bold;
+        outline: none;
+        transition: background-color 2s ease-in-out;
     }
 
 

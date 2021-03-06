@@ -30,11 +30,19 @@ a:hover, a:focus {
 }
 
 #footer-section {
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
+    background-color: black;
+    padding-top: 50px;
+    padding-left: 2px;
+    padding-right: 44px;
+    margin-top: 374px;
+    padding-bottom: 50px;
 
 }
+
+    
 
 .navigator {
     background-color: black; 
@@ -56,6 +64,15 @@ a:hover, a:focus {
     align-items: center;
     padding-right: 20px; 
     margin-top: 65px; 
+}
+
+.last-privacy-footer {
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 12px;
 }
 
 

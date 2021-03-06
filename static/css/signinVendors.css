@@ -197,45 +197,49 @@ a:hover, a:focus {
         float: left;
         width: 45px;
         margin-left: 0px;
-        height: 323px;
+        height: 129px;
         padding-left: 53px;
-        padding-top: 67px;
-        padding-bottom: 75px;
+        padding-top: 57px;
+        padding-bottom: 6px;
         background-color: black;
         border-top-left-radius: 95px;
-        border-bottom-left-radius: 45px;}
+        border-bottom-left-radius: 45px;
+    }
 
     .sign_up_img {
-        height: 83px;
+        height: 81px;
         width: 90px;
         padding-top: 4px;
         padding-right: 0px;
-        margin-left: -46px;}
+        margin-left: -46px;
+    }
 
     #right_body_div {
         display: grid;
         justify-content: center;
         align-items: center;
         margin-left: 0px;
-        width: 190px;
-        height: 412px;
+        font-size: 12px;
+        width: 264px;
+        height: 397px;
         border: 2px solid #9b9b9ba3;
-        padding-left: 18px;
-        padding-right: 2px;
+        padding-left: 1px;
+        padding-right: 0px;
         padding-top: 0px;
-        padding-bottom: 152px;
+        padding-bottom: 41px;
         border-top-right-radius: 45px;
-        border-bottom-right-radius: 45px; } 
+        border-bottom-right-radius: 45px;
+    }
 
     #email, #password {
         margin-top: 6px;
-        height: 38px;
-        width: 163px;
-        padding-left: 6px;
-        border-radius: 5px;
-        border-color: #edeaea9e;
-        outline: none;
-    }
+    height: 33px;
+    font-size: 12px;
+    width: 217px;
+    padding-left: 6px;
+    border-radius: 5px;
+    border-color: #edeaea9e;
+    outline: none; }
 
     #form {
         margin-top: 6px;
@@ -271,11 +275,41 @@ a:hover, a:focus {
         align-items: center;
         background-color: black;} 
 
-
     .footer {
         padding: 17px 0px 20px 0px;
         margin: 10px 0px 0px -15px;
         font-size: 18px;
+    }
+
+    .body_div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0px;
+        margin-top: 24px;
+        margin-bottom: 200px;
+    }
+
+    #sign_up_btn {
+        margin-top: 11px;
+        height: 44px;
+        font-size: 10px;
+        padding-left: 28px;
+        padding-right: 27px;
+        border-radius: 30px;
+        background: black;
+        color: white;
+        border: none;
+        font-weight: bold;
+        outline: none;
+        transition: background-color 2s ease-in-out;
+    }
+
+    .customers_reg_heading {
+        text-align: center;
+        font-size: 15px;
+        padding-bottom: 8px;
+        margin-bottom: 12px;
     }
 
 
