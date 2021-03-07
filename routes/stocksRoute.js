@@ -150,13 +150,6 @@ router.put('/update_stock', async(req, res) =>
         // Checking if the stock_rating was changed 
         if (stock_rating) { stock.stock_rating = stock_rating; }
 
-        // Execute this block of code below
-        // let stockObj = new STOCKS({
-        //     vendor_id: vendor_id, 
-        //     stock_name: stock_name, 
-        //     stock_price: stock_price, 
-        //     stock_rating: stock_rating
-        // }); 
 
         // Pushing the created values into the mongodb database 
         stockObj = await stock.save(); 
@@ -179,18 +172,33 @@ router.put('/update_stock', async(req, res) =>
 
 }); 
 
-// Update the value of a stock by the "_id" value 
 
 // Remove stock by id of the stock 
-router.delete('/:id', (req, res) =>
+router.delete('/delete_stock', async (req, res) =>
 {
-    // 
-}); 
+    // Get the stock id value and it's name from the request body 
+    let id_value = req.body.stock_id; 
+    let stock_name = req.body.stock_name; 
 
-// Remove stock by the vendor_id that added that stock 
-router.delete('/:vendor_id', (req, res) =>
-{
-    // 
+    // Look for the stock by the specified stock_id value 
+    try {
+        // Look for a specific stock with it's id value and remove/delete is from 
+        // The mongodb database
+        let result = await STOCKS.findByIdAndRemove(id_value); 
+        console.log(result); 
+
+        // Return the result for the deleted stock value 
+        return res.send(result).end(); 
+
+    }
+    // On errors connecting to the database, or the stock not found, 
+    // Execute this block of code below. 
+    catch (error) {
+        // Generate an error message and send it back to the user 
+        let errorMsg = JSON.stringify({"message": "stock_not_found"}); 
+        return res.send(errorMsg).end(); 
+    }
+
 }); 
 
 
