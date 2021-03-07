@@ -20,7 +20,7 @@ process.on('unhandledRejection', (ex) =>
 {
     // 
     winston.error(ex.message, ex); 
-    process.exit(1); 
+    // process.exit(1);
 }); 
 
 // 
@@ -35,18 +35,18 @@ process.on('ReferenceError', (ex) =>
 // Creating a connection to the mongodb database
 // Specifying the database "ecom_website" URI
 
-const mongodbAtlasURI = "mongodb+srv://ecom_website:54321@cluster0.1awiy.mongodb.net/ecom_website?retryWrites=true&w=majority";
-// const databaseURI = "mongodb://localhost/ecom_website"; 
+// const databaseURI = "mongodb+srv://ecom_website:54321@cluster0.1awiy.mongodb.net/ecom_website?retryWrites=true&w=majority";
+const databaseURI = "mongodb://localhost/ecom_website"; 
 
 // Setting the logging configurations 
 // winston.add(winston.transports.Console, { colorize: true, prettyPrint: true }); 
 winston.add(winston.transports.File, { filename: 'LogFile.log' }); 
-winston.add(winston.transports.MongoDB, { db: mongodbAtlasURI , level: 'error' }); 
+winston.add(winston.transports.MongoDB, { db: databaseURI , level: 'error' }); 
 
 
 
 // Connecting to the database 
-mongodb.connect(mongodbAtlasURI)
+mongodb.connect(databaseURI)
     .then(() =>
     {
         // On successful connection 
@@ -86,6 +86,7 @@ const HOST = process.env.HOST || '0.0.0.0';
 const home = require('./routes/homeRoute.js'); 
 const vendors = require('./routes/vendorsRoute.js'); 
 const customers = require('./routes/customersRoute.js'); 
+const stocks = require('./routes/stocksRoute.js'); 
 
 
 // -- Important routes 
@@ -98,6 +99,7 @@ const customers = require('./routes/customersRoute.js');
 app.use('/', home); 
 app.use('/api/vendors', vendors); 
 app.use('/api/customers', customers);
+app.use('/api/stocks', stocks); 
 //   
 // 
 
