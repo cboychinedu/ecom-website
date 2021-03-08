@@ -1,5 +1,7 @@
 // 
 let fdiv = document.getElementById('first-div'); 
+let sdiv = document.getElementById('second-div'); 
+
 // let ul = document.querySelectorAll('.first-list li'); 
 let firstList = document.querySelector(".first-list"); 
 let body = document.body; 
@@ -22,7 +24,7 @@ let stocks = () => {
     .done((data, textStatus, request) =>
     {
         // Get back the data and display it on the console 
-        console.log(data.length); 
+        console.log(data[0]); 
 
         // 
         for ( let i = 0; i < data.length; i++ ){
@@ -41,12 +43,16 @@ let stocks = () => {
             stock_rating.innerHTML = `<b> Stock Rating: </b> ${data[i].stock_rating}`; 
 
             // Append the values to the list element "first-list" 
+            ul.id = data[i]._id; 
             ul.append(stock_name, stock_price, stock_rating);
 
             // 
             fdiv.appendChild(ul); 
 
-            console.log(ul); 
+            //  
+            if  ( i >= 3 ) { sdiv.appendChild(ul); }
+
+            
 
         }
         
