@@ -74,6 +74,9 @@ function checkData()
                 console.log(request.getResponseHeader('x-auth-token')); 
                 // Save the token data as a "sessionStorage" 
                 console.log(request); 
+
+                // Navigate to the loggedCustomers route 
+                location.href = "/api/stocks/loggedCustomers"
             })
         }
 

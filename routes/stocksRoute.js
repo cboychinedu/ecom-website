@@ -7,6 +7,29 @@ const { STOCKS } = require('../models/validation.js');
 // Creating the router object 
 const router = express.Router(); 
 
+// Get all the stocks in the database 
+router.get('/', async (req, res) =>
+{
+    // Using a try , catch block for connection to the mongodb database 
+    try {
+        // Getting all the stocks 
+        let allStocks = await STOCKS.find({}); 
+
+        // Execute this block of code if the stocks is not empty, 
+        // And send back the stocks 
+        return res.send(allStocks); 
+    }
+
+    // Placing a catch block 
+    catch (error) {
+        // On error 
+        console.log(error); 
+        const errorMsg = JSON.stringify({"message": "Could not find stocks."}); 
+        return res.send(errorMsg).status(404).end(); 
+    }
+
+}); 
+
 // Get stocks by the id of the stock 
 router.post('/stock_id', async (req, res) =>
 {

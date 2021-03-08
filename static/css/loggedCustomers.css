@@ -1,0 +1,21 @@
+body {
+    margin: 0 auto; 
+    padding: 0 auto; 
+    background-color: rgb(243, 243, 243); 
+    color: black; 
+    font-family: 'Antic Slab', serif;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+
+#first-div {
+    margin-top: 100px; 
+    color: whitesmoke; 
+    display: grid; 
+    justify-content: center;
+    align-items: center;
+}

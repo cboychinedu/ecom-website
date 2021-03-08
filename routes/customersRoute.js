@@ -181,6 +181,18 @@ router.post('/signInCustomers', async (req, res) =>
 
 }); 
 
+// REMEMBER, THIS ROUTE MUST BE PROTECTED USING THE AUTH -- MIDDLEWARE!!! 
+router.get('/loggedCustomers', async (req, res) => 
+{
+    // 
+    // Sending the "signinCustomers.html" webpage 
+    let fullPath = path.join(rootPath, 'static', 'templates', 'loggedCustomers.html'); 
+
+    // Sending the page 
+    res.sendFile(fullPath); 
+
+}); 
+
 
 
 // Exporting the router 
