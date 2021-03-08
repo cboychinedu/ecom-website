@@ -4,7 +4,7 @@
   "description": "Ecom Website",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1", 
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
   "enginer": {
@@ -13,6 +13,9 @@
   "author": "Mbonu Chinedum",
   "license": "MIT",
   "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-preset-env": "^1.7.0",
     "bcrypt": "^5.0.1",
     "config": "^3.3.4",
     "express": "^4.17.1",
