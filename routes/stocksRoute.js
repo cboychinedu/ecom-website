@@ -93,6 +93,7 @@ router.post('/add_stock', async (req, res) =>
     const stock_name = req.body.stock_name; 
     const stock_price = req.body.stock_price; 
     const stock_rating = req.body.stock_rating; 
+    const source_location = req.body.source_location; 
 
     // Creating a dict to hold the newly created stocks using 
     // POST request 
@@ -111,7 +112,8 @@ router.post('/add_stock', async (req, res) =>
                 vendor_id: vendor_id, 
                 stock_name: stock_name, 
                 stock_price: stock_price, 
-                stock_rating: stock_rating
+                stock_rating: stock_rating, 
+                source_location: source_location 
             }); 
     
             // Pushing the created values into the mongodb database 
@@ -186,6 +188,7 @@ router.put('/update_stock', async(req, res) =>
     catch (error) {
         // Generate an error message 
         const errorMsg = JSON.stringify({"message": "error_updating"}); 
+        console.log(error); 
         
 
         // Send the error message 
@@ -211,6 +214,8 @@ router.delete('/delete_stock', async (req, res) =>
         console.log(result); 
 
         // Return the result for the deleted stock value 
+        // Create the success message 
+        let successMsg = JSON.stringify({"message": "successful_deletion"}); 
         return res.send(result).end(); 
 
     }

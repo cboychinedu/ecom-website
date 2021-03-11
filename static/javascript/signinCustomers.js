@@ -61,6 +61,7 @@ function checkData()
                 url: '/api/customers/signInCustomers', 
                 dataType: 'json', 
                 contentType: 'application/json', 
+                // Headers: {"x-auth-token": sessionStorage.getItem('x-auth-token')}, 
                 data: userData, 
                 crossDomain: true, 
                 // success: function()
@@ -70,10 +71,13 @@ function checkData()
             {
                 // Successful connection 
                 alert(data.message); 
-                alert("TextStatus: " + textStatus); 
-                console.log(request.getResponseHeader('x-auth-token')); 
-                // Save the token data as a "sessionStorage" 
-                console.log(request); 
+               
+                // console.log(request.getResponseHeader('x-auth-token')); 
+                // Getting the token data from the response header 
+                const token_data = request.getResponseHeader('x-auth-token'); 
+
+                // Saving the token data inside the session storage 
+                sessionStorage.setItem("x-auth-token", token_data); 
 
                 // Navigate to the loggedCustomers route 
                 location.href = "/api/stocks/loggedCustomers"

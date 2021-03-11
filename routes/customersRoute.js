@@ -5,6 +5,7 @@ const Joi = require('joi');
 const bcrypt = require('bcrypt'); 
 const express = require('express'); 
 const path = require('path'); 
+const { protectedRoute } = require('../middleware/jwt-auth.js'); 
 const { rootPath } = require('../base.js'); 
 const { validateRegistration, CUSTOMERS, VENDORS } = require('../models/validation.js');
 
@@ -182,7 +183,7 @@ router.post('/signInCustomers', async (req, res) =>
 }); 
 
 // REMEMBER, THIS ROUTE MUST BE PROTECTED USING THE AUTH -- MIDDLEWARE!!! 
-router.get('/loggedCustomers', async (req, res) => 
+router.get('/loggedCustomers', protectedRoute, async (req, res) => 
 {
     // 
     // Sending the "signinCustomers.html" webpage 

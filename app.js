@@ -35,8 +35,8 @@ process.on('ReferenceError', (ex) =>
 // Creating a connection to the mongodb database
 // Specifying the database "ecom_website" URI
 
-// const databaseURI = "mongodb+srv://ecom_website:54321@cluster0.1awiy.mongodb.net/ecom_website?retryWrites=true&w=majority";
-const databaseURI = "mongodb://localhost/ecom_website"; 
+const databaseURI = "mongodb+srv://ecom_website:54321@cluster0.1awiy.mongodb.net/ecom_website?retryWrites=true&w=majority";
+// const databaseURI = "mongodb://localhost/ecom_website"; 
 
 // Setting the logging configurations 
 // winston.add(winston.transports.Console, { colorize: true, prettyPrint: true }); 
@@ -80,7 +80,7 @@ app.set('views', './views');
 
 // Using the environment variable for assigning the PORT and HOST value 
 const PORT = process.env.PORT || 5000; 
-const HOST = process.env.HOST || '0.0.0.0'; 
+const HOST = process.env.HOST || 'localhost'; 
 
 // Importing the requried routes 
 const home = require('./routes/homeRoute.js'); 

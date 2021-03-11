@@ -170,7 +170,7 @@ router.post('/signInVendors', async (req, res) =>
 
             }
 
-            // 
+            //  
             else 
             {
                 // If the password is not validated 

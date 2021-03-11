@@ -12,10 +12,15 @@ li {
     color: black;
 }
 
+b {
+    margin-left: 10px; 
+}
+
 #first-div {
-    margin-top: 100px; 
+    margin-top: 65px; 
     color: whitesmoke; 
-    display: flex; 
+    display: grid; 
+    padding-right: 5px;
     justify-content: center;
     align-items: center;
 }
@@ -24,7 +29,57 @@ li {
     margin-left: -41px; 
     margin-top: 100px; 
     color: whitesmoke; 
-    display: flex; 
+    display: grid; 
     justify-content: center;
     align-items: center;
+}
+
+
+
+.img_file {
+    margin-right: 20px; 
+    float: left; 
+    height: 60px; 
+    width: 60px;
+}
+
+.img_file:hover, .img_file:focus {
+    box-shadow: -41px ​39px 77px 90px; 
+}
+
+.stocks_list {
+    padding-top: 30px;
+    background-color: #cdcbcbb0;
+    padding-bottom: 30px;
+    width: 750px;
+    color: white;
+}
+
+.stocks_two {
+    background-color: #efd7cf;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.data {
+    margin-left: 10px; 
+    text-align: center;
+}
+
+.buy_btn, .rate_btn {
+    background-color: #bbadeb66;
+    border: none;
+    height: 31px;
+    color: #3a2b90;
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    width: 96px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 8px -7px;
+}
+
+.rate_btn { 
+    margin-right: 13px;
 }

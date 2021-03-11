@@ -30,7 +30,8 @@ const stocksSchema = new mongodb.Schema({
     stock_name: { type: String, }, 
     stock_price: { type: Number, }, 
     stock_rating: { type: Number, }, 
-    versionKey: false 
+    source_location: { type: String, }, 
+    versionKey: false, 
 }); 
 
 // Connecting to the "customers" collection 
