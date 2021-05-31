@@ -138,7 +138,7 @@ router.post('/signInCustomers', async (req, res) =>
         // If the email address is found 
         else 
         {
-            // Execute this block of code is the specified email address is found on the 
+            // Execute this block of code if the specified email address is found on the 
             // Mongodb database 
             let user_password = req.body.password; 
             let hashed_password = newCustomer.password; 

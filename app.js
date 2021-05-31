@@ -1,4 +1,4 @@
-// Importing teh required module 
+// Importing the required module 
 require('winston-mongodb'); 
 const path = require('path'); 
 const { ObjectId } = require('mongodb'); 
@@ -82,7 +82,7 @@ app.set('views', './views');
 const PORT = process.env.PORT || 5000; 
 const HOST = process.env.HOST || 'localhost'; 
 
-// Importing the requried routes 
+// Importing the required routes 
 const home = require('./routes/homeRoute.js'); 
 const vendors = require('./routes/vendorsRoute.js'); 
 const customers = require('./routes/customersRoute.js'); 
